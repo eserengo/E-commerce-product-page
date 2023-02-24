@@ -1,0 +1,111 @@
+@import "variables.css";
+
+body {
+  min-width: 250px;
+}
+
+.header {
+  height: 48px;
+  padding: 16px;
+  justify-content: space-between;
+}
+
+.avatar,
+.cart.icon,
+.menu.icon,
+.close.icon {
+  width: 16px;
+  height: 16px;
+}
+
+.header .flex-row {
+  gap: 16px;
+}
+
+.notification {
+  top: -4px;
+  right: 24px;
+}
+
+.menu-modal-bg {
+  position: fixed;
+  z-index: 3;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--Black-Opacity-LightboxBackground);
+}
+
+.menu-modal {
+  position: fixed;
+  z-index: 3;
+  top: 0%;
+  left: 0%;
+  width: 70%;
+  height: 100%;
+  background-color: var(--White-Neutral);
+  border: 1px solid var(--White-Neutral);
+  padding: 16px;
+}
+
+.menu-modal .close.icon {
+  margin-bottom: 32px;
+}
+
+.menu-modal .flex-col li {
+  font-weight: var(--FontBold);
+  color: var(--VeryDarkBlue-Neutral);
+  padding: 8px 0px;
+}
+
+.menu-modal .flex-col li:hover {
+  text-decoration: underline;
+}
+
+.cart-modal {
+  top: 55px;
+  right: 2.5%;
+  width: 95%;
+}
+
+.main {
+  gap: 8px;
+}
+
+.slideshow.image {
+  height: 100%;
+  z-index: 0;
+}
+
+.prev.icon,
+.next.icon {
+  z-index: 1;
+  width: 24px;
+  position: relative;
+}
+
+.prev.icon {
+  top: -160px;
+  left: 8px;
+}
+
+.next.icon {
+  top: -160px;
+  right: 8px;
+}
+
+.description {
+  padding: 5%;
+}
+
+.quantifier,
+.primary.button {
+  width: 100%;
+  height: 40px;
+}
+
+.quantifier {
+  margin: 16px 0px 8px;
+}
+

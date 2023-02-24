@@ -1,0 +1,14 @@
+:root {
+  --FontBold: 700;
+
+  --Orange-Primary: hsl(26, 100%, 55%);
+  --PaleOrange-Primary: hsl(25, 100%, 94%);
+
+  --VeryDarkBlue-Neutral: hsl(220, 13%, 13%);
+  --DarkGrayishBlue-Neutral: hsl(219, 9%, 45%);
+  --GrayishBlue-Neutral: hsl(218, 35%, 88%);
+  --LightGrayishBlue-Neutral: hsl(223, 64%, 98%);
+  --White-Neutral: hsl(0, 0%, 99%);
+  
+  --Black-Opacity-LightboxBackground: rgba(3, 3, 3, 0.75);
+}

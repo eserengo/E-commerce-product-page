@@ -1,0 +1,205 @@
+/*
+ Name: E-commerce product page.
+ Description: A Frontendmentor.io coding challenge.
+ Author: Federico Borzani.
+ Author URL:  https://github.com/eserengo/
+*/
+
+@import "variables.css";
+
+:root {
+  font-family: "Kumbh Sans";
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0%;
+  margin: 0%;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--LightGrayishBlue-Neutral);
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+strong {
+  color: var(--VeryDarkBlue-Neutral) !important;
+}
+
+.icon:hover {
+  filter: invert(37%) sepia(63%) saturate(1971%) hue-rotate(356deg) brightness(100%) contrast(135%);
+}
+
+.avatar:hover {
+  border: 2px solid var(--Orange-Primary);
+  border-radius: 50%;
+}
+
+.notification {
+  background-color: var(--Orange-Primary);
+  color: var(--White-Neutral);
+  font-size: 60%;
+  padding: 0px 6px;
+  border-radius: 8px;
+}
+
+.header .logo {
+  width: 112px;
+}
+
+.cart-modal {
+  position: fixed;
+  z-index: 2;
+  background-color: var(--White-Neutral);
+  border: 1px solid var(--White-Neutral);
+  border-radius: 8px;
+  box-shadow: 0px 1px 8px var(--Black-Opacity-LightboxBackground), 0px 1px 8px var(--DarkGrayishBlue-Neutral);
+}
+
+.cart-modal-message {
+  font-size: 80%;
+  font-weight: var(--FontBold);
+  color: var(--DarkGrayishBlue-Neutral);
+  display: block;
+  margin: 56px auto;
+}
+
+.cart-modal > .flex-row:first-of-type {
+  justify-content: space-between;
+  padding: 5%;
+  border-bottom: 1px solid var(--GrayishBlue-Neutral);
+}
+
+.cart-modal > .flex-row.center {
+  padding: 5%;
+  justify-content: space-between !important;
+}
+
+.cart-modal > .flex-row.center > .flex-col {
+  gap: 4px;
+}
+
+.cart-modal > .flex-row.center > .flex-col > br {
+  display: none;
+}
+
+.cart-modal-image {
+  width: 48px;
+  border-radius: 8px;
+}
+
+.cart-modal-product,
+.cart-modal-price {
+  text-align: left;
+  color: var(--DarkGrayishBlue-Neutral);
+  font-size: 80%
+}
+
+.tag {
+  color: var(--Orange-Primary);
+  font-weight: var(--FontBold);
+  font-size: 80%;
+}
+
+.title {
+  color: var(--VeryDarkBlue-Neutral);
+  font-weight: var(--FontBold);
+}
+
+.primary.title  {
+  font-size: 150%;
+  margin: 16px 0px;
+}
+
+.primary.para {
+  color: var(--DarkGrayishBlue-Neutral);
+  font-size: 80%;
+  margin-bottom: 24px;
+}
+
+.price,
+.discount,
+.prevprice {
+  display: inline;
+  vertical-align: middle;
+}
+
+.price.title {
+  font-size: 140%;
+}
+
+.discount {
+  font-size: 80%;
+  font-weight: var(--FontBold);
+  color: var(--Orange-Primary);
+  background-color: var(--PaleOrange-Primary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 0px 16px;
+}
+
+.prevprice {
+  color: var(--DarkGrayishBlue-Neutral);
+  font-size: 80%;
+  font-weight: var(--FontBold);
+  text-decoration: line-through;
+  float: right;
+  margin-top: 4px;
+}
+
+.quantifier {
+  background-color: var(--GrayishBlue-Neutral);
+  color: var(--VeryDarkBlue-Neutral);
+  font-weight: var(--FontBold);
+  font-size: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+  border-radius: 8px;
+}
+
+.button {
+  background-color: var(--Orange-Primary);
+  color: var(--White-Neutral);
+  font-family: "Kumbh Sans";
+  font-weight: var(--FontBold);
+  font-size: 80%;
+  padding: 8px 16px;
+  border: 1px solid var(--Orange-Primary);
+  border-radius: 8px;
+  opacity: 80%;
+}
+
+.primary.button {
+  gap: 8px;
+}
+
+.primary.button > .cart {
+  width: 16px;
+}
+
+.secondary.button {
+  display: block;
+  width: 90%;
+  margin: 0% 5% 5%;
+}
+
+.button:hover {
+  opacity: 100%;
+  box-shadow: 0px 1px 8px var(--Orange-Primary);
+}
+
+.attribution {
+  display: block;
+  text-align: center;
+  font-size: 50%;
+}
